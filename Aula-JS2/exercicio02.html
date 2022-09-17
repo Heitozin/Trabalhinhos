@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #pai {
+            color: white;
+        }
+
+        header {
+            display: flex;
+
+        }
+
+        .pai {
+            width: 150px;
+            height: 1000px;
+            background-color: black;
+
+        }
+
+        .pai p {
+            color: white;
+        }
+
+        i {
+            color: white;
+        }
+
+        #card {
+            margin: 10px;
+        }
+
+        #cal1 {
+            margin: 10px;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 80px;
+        }
+
+        button {
+            margin-top: 10px;
+            background-image: linear-gradient(to right top, #d45b26, #e87c1b, #f69f06, #fec300, #ffe800);
+            border-radius: 6px;
+            padding: 2px;
+        }
+
+        #res {
+            width: 130px;
+        }
+
+        #card {
+            display: flex;
+        }
+
+        i {
+            margin-right: 7px;
+        }
+    </style>
+</head>
+
+<body>
+
+        <h1>Calculadora</h1>
+        <i>&#10070;</i>
+        
+    <div class="pai">
+        <div id="card">
+            <div id="cal1">
+                <p>
+                    <label for="num1">Digite um número</label>
+                    <input required type="number" name="num1" id="num1" placeholder="EX: 30">
+                </p>
+            </div>
+
+            <div id="cal2">
+                <p>
+                    <label for="num2">Digite outro número</label>
+                    <input required type="number" name="num2" id="num2" placeholder="EX: 70">
+                </p>
+            </div>
+
+            <div id="selecione">
+                <label for="selecao"></label>
+                <select name="selecao" id="selecao">
+                    <option value="adicao">Adição</option>
+                    <option value="subtracao">Subtração</option>
+                    <option value="multiplicacao">Multiplicação</option>
+                    <option value="divisao">Divisão</option>
+                </select>
+            </div>
+
+            <div id="botao">
+                <p>
+                    <button id="calcular" onclick="calcular()">Calcular</button>
+                </p>
+            </div>
+
+            <div id="result">
+                <p id="res">Resultado</p>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <script>
+        function calcular() {
+            let conta = document.querySelector('#selecao').value
+            let result = document.querySelector('#res')
+            let num1 = Number(document.querySelector('#num1').value)
+            let num2 = Number(document.querySelector('#num2').value)
+            console.log(result)
+            if (conta == 'adicao') {
+                let soma = num1 + num2
+                result.innerHTML = soma
+            } else if (conta == 'subtracao') {
+                let subtracao = num1 - num2
+                result.innerHTML = subtracao
+            } else if (conta == 'multiplicacao') {
+                let multiplicacao = num1 * num2
+                result.innerHTML = multiplicacao
+            } else if (conta == 'divisao') {
+                let divisao = num1 / num2
+                result.innerHTML = divisao
+            }
+
+        }
+    </script>
+</body>
+
+</html>

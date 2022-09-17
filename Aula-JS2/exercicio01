@@ -1,0 +1,12 @@
+/*Os laços de repetição, são formas de fazer com que a minha condição se repita por N vezes
+As estruturas 
+
+As estruturas do while (enquanto) executar a ação, irá se repetir.*/ 
+let contador = 1
+while(contador <= 20){
+    console.log(contador)
+    contador++
+}
+
+/*A sintaxe do while, é bem simples, sempre utilizamos a palavra reservada "while" logo em seguida precisamos passar uma condição
+que será atendida enquanto ele retonar true, ou seja, verdadeiro.*/

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript / CSS</title>
+</head>
+<body>
+    <h1 id="titulo">Trabalhando com CSS em Javascript</h1>
+    <button onclick="document.getElementById('titulo').style.color = 'red'">Clique aqui</button>
+    <hr>
+    <p id="destaque">Texto com algum tipo de destaque</p>
+    <p id="destaque2">Texto com muito destaque</p>
+    <button onclick="document.getElementById('destaque2').style.cssText = ''">Reset</button>
+
+
+    <script>
+        var destaque = document.getElementById('destaque').style.color = 'orange'
+        var destaque2 = document.getElementById('destaque2');
+            destaque2.style.cssText =
+                'color: #9EBBF5;' +
+                'font-family: arial;' +
+                'font-size: 30px';
+        
+    </script>
+</body>
+</html>

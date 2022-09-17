@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Js</title>
+    <style>
+        body{
+            background-color: rgb(224, 240, 255);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiro Js</h1>
+    <p>Minha primeira página com interação em Js</p>
+
+    <script>
+        //window.alert('Olá Mundo!') //Alerta para o usuário (comentário de uma linha)
+        //window.confirm('Recebeu o comunicado ae?')
+        /*Confirmação para o
+         usuário (comunicado de várias linhas)*/
+        //var  nome = window.prompt('Qual é o seu nome?')
+        //alert("É um prazer conhecer você, " + nome + "!")//Concatenação de STRING e VARIÁVEL
+        var num1 = Number.parseFloat(window.prompt("Digite um número: "))
+        var num2 = Number.parseFloat(window.prompt("Digite outro número: "))
+        var resultado = (num1 + num2)
+        alert("A soma dos números é de: " + resultado) 
+        //(string + string) -> Concatenação
+        //(number + number) -> Adição
+        //num1 e num2 -> números inteiros
+        /*Tudo o que colocarmos no prompt será automaticamente
+        uma string, para que uma operação aritmética possa acontecer,
+        precisamos converter as strings em números. Para isso usamos a função 
+        Number.parseFloat ou somente o Number (o Number.parseInt é usado para números
+        inteiros)*/
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício cores</title>
+    <style>
+        #azul {
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px;
+            width: 70px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            border: solid black 2px;
+            margin-right: 1px;
+        }
+
+        #verde {
+            border-radius: 15px;
+            padding: 30px;
+            margin-left: 1px;
+            width: 70px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            border: solid black 2px;
+            margin: 20px;
+            
+        }
+
+        #laranja {
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px;
+            width: 70px;
+            background-color: orange;
+            color: white;
+            text-align: center;
+            border: solid black 2px;
+            margin-left: 1px;
+        }
+
+        #pai{
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        h1{
+            justify-content: center;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><b>Escolhendo a cor e exibindo o significado</b></h1>
+    <hr>
+
+    <div id="pai">
+        <div id="azul"  onmouseout="d()" onmouseenter="a()">
+            <p>Azul</p>
+        </div>
+
+        <div id="verde" onmouseout="e()" onmouseenter="b()">
+            <p>Verde</p>
+        </div>
+
+        <div id="laranja" onmouseout="f()" onmouseenter="c()">
+            <p>Laranja</p>
+        </div>
+    </div>
+
+    <script>
+            var pai = window.document.getElementById('pai');
+            var azul = document.getElementById('azul')
+            function a(){
+                pai.style.background = 'blue'
+                document.body.style.backgroundColor = 'blue'
+                azul.innerText = 'O azul é uma cor serena'
+            }
+            function d(){
+                pai.style.background = 'white'
+                document.body.style.backgroundColor = 'white'
+                azul.innerText = 'Azul'
+            }
+            
+            var verde = document.getElementById('verde')
+            function b(){
+                pai.style.background = 'green'
+                document.body.style.backgroundColor = 'green'
+                verde.innerText = 'O verde é uma cor de liberdade e de esperança'
+            }
+            function e(){
+                pai.style.background = 'white'
+                document.body.style.backgroundColor = 'white'
+                verde.innerText = 'Verde'
+            }
+
+            var laranja = document.getElementById('laranja')
+            function c(){
+                pai.style.background = 'orange'
+                document.body.style.backgroundColor = 'orange'
+                laranja.innerText = 'Laranja é uma cor que traz energia'
+            }
+            function f(){
+                pai.style.background = 'white'
+                document.body.style.backgroundColor = 'white'
+                laranja.innerText = 'Laranja'
+            }
+    </script>
+</body>
+
+</html>

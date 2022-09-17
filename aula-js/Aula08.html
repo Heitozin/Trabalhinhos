@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Lâmpada</title>
+    <script>
+        // função = conjunto de comandos ou tecnicamente uma rotina de caso que dispara uma sequência
+        function acenderLampada(){
+            document.getElementById('Luz').src = "img/luz.jpeg"
+        }
+
+        function apagarLampada(){
+            document.getElementById('Luz').src = "img/apagada.jpeg"
+        }
+
+        function quebrarLampada(){
+            document.getElementById('Luz').src = "img/quebrada.jpg"
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Acender a lâmpada</h1>
+    <img src="img/apagada.jpeg" id="Luz" alt="Lampada apagada" onmousemove="acenderLampada()" onmouseout="apagarLampada()" onclick="quebrarLampada()">
+    
+</body>
+</html>

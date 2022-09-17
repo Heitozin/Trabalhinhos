@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC no HTML</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+
+        input{
+            font: normal 18pt Arial;
+            width: 200px;
+        }
+
+        #card{
+            width: 350px;
+            text-align: center;
+            margin: 50px;
+            box-shadow: gray 1px 1px 5px;
+            padding: 10px;
+            border-radius: 5%;
+        }
+    </style>
+</head>
+<body>
+    <h1><b>Calculando o IMC</b></h1>
+    <div id="card">
+        <p>
+        <label for="altura">Qual a sua altura?</label>
+        <input required type="text" name="altura" id="altura" placeholder="EX: 1.71">
+        </p>
+
+        <p>
+            <label for="peso">Qual o seu peso?</label>
+            <input required type="text" name="peso" id="peso" placeholder="EX: 70">
+        </p>
+
+        <p>
+        <button id="calcular" onclick="calcular()">Calcular</button>
+        </p>
+
+        <p id="res">Resultado</p>
+    
+    </div>
+
+    <script>
+        function calcular(){
+            let altura = window.document.getElementById('altura')
+            //var peso = window.document.getElementById('peso')
+            let peso = window.document.querySelector('input#peso')
+            let res = window.document.getElementById('res')
+            let n1 = Number(altura.value)
+            let n2 = Number(peso.value)
+            let imc = n2 / (n1*n1)
+            //res.innerText = "Sua altura é:" +n1+ "e seu peso é:" +n2+ "logo seu IMC é de:" +imc+
+            res.innerText = `Sua altura é: ${n1.toFixed(2)} e seu peso é: ${n2}, logo seu IMC é de: ${imc.toFixed(2)}`
+        }
+    </script>
+</body>
+</html>

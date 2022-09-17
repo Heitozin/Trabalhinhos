@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições simples</title>
+</head>
+
+<body>
+    <h1>Calculo de notas</h1>
+    <p>Sua nota: <input type="number" name="txtidade" id="txtidade">
+        <input type="button" value="verificar" onclick="verificar()">
+    </p>
+    <p id="res"></p>
+
+    <script>
+        function verificar() {
+            let txtidade = window.document.querySelector('input#txtidade')
+            let res = window.document.querySelector('p#res')
+            let idade = Number(txtidade.value)
+            if(idade >= 7){
+                res.innerHTML = '<p>Você está <strong>APROVADO!</strong></p>'
+            }else{
+                res.innerHTML += '<p>Você está <strong>REPROVADO!</strong></p>'
+            }
+            res.innerHTML += '<p>Verifique as pendências com o seu professor.</p>'
+        }
+    </script>
+
+</body>
+
+</html>

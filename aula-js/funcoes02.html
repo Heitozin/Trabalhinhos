@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções 02</title>
+    <style>
+        div#caixa{
+            font: normal 20pt arial;
+            background-color: blueviolet;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Treinando funções</h1>
+    <div id="caixa" onclick="clicar()" onmouseout="sair()" onmouseenter="entrar()">Interação</div>    
+    <script>
+        let a = window.document.getElementById('caixa')
+        function clicar(){
+            a.innerText = 'Clicou'
+            a.style.background = 'yellow'
+            a.style.color = 'black'
+        }
+
+        function entrar(){
+            a.innerText = 'Entrou'
+            a.style.color = 'orange'
+            a.style.background = 'black'
+        }
+
+        function sair(){
+            a.innerText = 'Saiu'
+            a.style.color = 'green'
+            a.style.background = 'white'
+        }
+    </script>
+</body>
+</html>

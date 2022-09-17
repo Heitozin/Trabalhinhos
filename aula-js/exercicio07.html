@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="pt br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trabalhando com aritmética no terminal</title>
+
+</head>
+
+<body>
+
+    <h1>Experimentos de cálculo</h1>
+
+    <h3>A seguir vejamos alguns cálculos simples para entender melhor como funciona a aritmética dentro de uma string</h3>
+
+    <br>
+
+    <p> F-) Calcule seu IMC</p>
+    <script>
+        var peso = Number(window.prompt('Qual é o seu peso?'))
+        var altura = Number(window.prompt('Qual é a sua altura?'))
+        var imc = peso / (altura+altura)
+        window.alert('seu IMC é:'+imc.toFixed(1))
+        //window.alert('Seu imc é: $(imc)')
+
+
+
+        var mercadoria = Number(window.prompt('Qual é o valor da mercadoria?'))
+        var resultado = mercadoria * 5 / 100
+        alert('O lucro total é de:'+resultado)
+    </script>
+
+</body>
+
+
+
+
+
+</html>

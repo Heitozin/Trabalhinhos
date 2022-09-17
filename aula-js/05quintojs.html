@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com IDs</title>
+</head>
+<body>
+    <h1>Trabalhando com os elementos de Get e IDs</h1>
+    <p id="texto">Texto desenvolvido por meio de um clique.</p>
+    <button onclick='document.getElementById("texto").innerHTML = "Elemento ID"'>Clique aqui</button>
+    <hr>
+    <button id="acender" onclick='document.getElementById("imagem").src= "img/luz.jpeg"'>Acender a luz</button>
+    <button onclick="document.getElementById('acender').style.display = 'none'">Ocultar botão</button>
+    <button onclick="document.getElementById('acender').style.display = 'inline'">Mostrar botão</button>
+    <img id="imagem" src="img/apagada.jpeg">
+    <button onclick="document.getElementById('imagem').src='img/apagada.jpeg'">Apagar a luz</button>
+</body>
+</html>
