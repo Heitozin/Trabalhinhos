@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com hover</title>
+
+    <style>
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+
+        }
+
+        th, td{
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid blue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        tr:nth-child(even){
+            background-color: cadetblue;
+        }
+
+        tr:hover{
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabela com hover</h1>
+    <p>Ao passar o mouse em cima das linhas elas ficam com cor diferente.</p>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Categorias</th>
+            <th>pontos</th>
+        </tr>
+
+        <tr>
+            <td>Peter</td>
+            <td>Natação</td>
+            <td>300</td>
+        </tr>
+
+        <tr>
+            <td>Luciana</td>
+            <td>Atletismo</td>
+            <td>280</td>
+        </tr>
+
+        <tr>
+            <td>Matheus</td>
+            <td>Box</td>
+            <td>220</td>
+        </tr>
+
+        <tr>
+            <td>Maria</td>
+            <td>Tiro ao alvo</td>
+            <td>200</td>
+        </tr>
+    </table>
+</body>
+</html>

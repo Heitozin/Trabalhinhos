@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Vídeo e Audio</title>
+    </head>
+    <body>
+        <h1>Inserindo música e vídeo</h1>
+        <p>
+            Para inserir uma música MP3 em sua página web,
+            o arquivo <strong>DEVE ESTAR EM UMA PASTA</strong> junto com a pasta do site
+            (<b>PASTA RAIZ</b>). 
+            Geralmente essa pasta é nomeada como mídia, onde deve constar todos os arquivos de mídia do site.
+        </p>
+
+        <audio controls>
+            <source src="midia/audio/metalica_nothing.mp3" type="audio/mpeg">
+        </audio>
+        <hr>
+        <br>
+
+        <p>Veja o video a seguir:</p>
+        <video controls>
+            <source src="midia/video/london.mp4" type="video/mp4">
+        </video>
+        
+        <hr>
+        <p>Próxima vídeo deve conter legendas.</p>
+        <br>
+        
+        <video controls>
+            <source src="midia/video/pink-floyd.mp4" type="video/mp4">
+            <source src="midia/video/pink-floyd.ogv" type="video/ogg">
+            <source src="midia/video/pink-floyd.webm" type="video/webm">
+
+            <track kind="subtitles" srclang="pt-br" src="midia/video/legenda-ptbr.vtt" label="Português (Brasil)" default>
+        </video>
+
+        <hr>
+
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/iqKEnKRDkds" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+        >
+        </iframe>
+
+        <p>Inserindo mapa de localização</p>
+
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14632.496579342622!2d-46.6918087!3d-23.5280369!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1656460998633!5m2!1spt-BR!2sbr" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+    </body>
+</html>

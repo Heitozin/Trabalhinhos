@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulários</title>
+    </head>
+    <body>
+        <h1>Trabalhando com tags para formulários</h1>
+        <p>Exemplos</p>
+
+        <form action="#" method="post">
+            <p>
+                <label for="nome">Nome: </label>
+                <input required type="text" id="nome" name="nome" >
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input required type="email" id="email" name="email">
+            </p>
+            <p>
+                <label for="telefone">Telefone:</label>
+                <input required type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+            </p>
+            <p>Genero</p>
+
+            <p>
+                <input type="radio" id="masculino" name="genero">
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" id="feminino" name="genero"> 
+                <label for="feminino">Feminino</label>
+            </p>
+
+            <p>Interesses:</p>
+            <p>
+                <input type="checkbox" id="html" name="interesses">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" id="css" name="interesses">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" id="js" name="interesses">
+                <label for="js">JavaScript</label>
+            </p>
+
+            <p>Nascimento:</p>
+            <p>
+                <label for="nascimento">Nascimento: </label>
+                <input type="date" id="nascimento" name="nascimento">
+            </p>
+
+            <p>
+                <label for="cor">Qual a sua cor favorita?</label>
+                <input type="color" id="cor" name="cor">
+            </p>
+
+            <p>
+                <label for="assunto">Assunto:</label>
+                <select name="assunto" id="assunto">
+                    <option value="">Elogios</option>
+                    <option value="">Reclamações</option>
+                    <option value="">Outros</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="5" ></textarea>
+            </p>
+
+            <button type="submit" id="enviar">Enviar</button>
+        </form>
+    </body>
+</html>

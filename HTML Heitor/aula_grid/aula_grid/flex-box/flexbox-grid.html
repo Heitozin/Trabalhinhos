@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- Propriedade para deixar a página responsiva -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Conceitos de Flexbox</title>
+
+	<style>
+		.container{
+			display: flex;
+			background-color: yellow;
+			max-width: 800px;
+			margin: auto;
+		}
+
+		.caixas{
+			width: 260px;
+			text-align: center;
+		}
+
+		img{
+			width: 100%;
+			border-radius: 5px;
+		}
+
+		.container>div{
+			background-color: black;
+			margin: 10px;
+			padding: 20px;
+			border-radius: 20px;
+		}
+
+		#direction{
+			display: flex;
+			flex-direction: column;
+			background-color: aqua;
+			color: white;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			width: 320px;
+		}
+
+		.containerWrap{
+			display: flex;
+			flex-wrap: wrap;
+			background-color: green;
+			margin: auto;
+		}
+
+		.caixasW{
+			background-color: beige;
+			width: 100px;
+			margin: 10px;
+			text-align: center;
+			line-height: 75px;
+			font-size: 30px;
+		}
+
+		.justify-content{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			background-color: darkgrey;
+		}
+
+		.justify-content>div{
+			margin: 1%;
+			text-align: right;
+			font-size: 24px;
+			width: 360px;
+		}
+	</style>
+
+</head>
+<body>
+	<h1>Alinhamento de elementos e conteúdo usando Flexbox</h1>
+	<hr>
+	<p>Flexbox é um mecanismo do CSS3 que permite aplicar facilmente alinhamento e distribuição de elementos e conteúdos no HTML.</p>
+	<p>Na prática, é uma técnica diferente para solucionar problemas e minimizar o grande uso de paddings, margins, floats, positions na resolução de dificuldades na construção de layouts.</p>
+
+	<hr>
+
+	<h2>Exemplo1</h2>
+	<h3>Display flex</h3>
+
+	<h4>Pop Art</h4>
+
+	<!-- Flex Container (elemento PAI) -->
+	<div id="exemplo" class="container">
+
+		<!-- Flex Items (elementos FILHO) -->
+		<div class="caixas" id="um"><img src="imagem6.jpg" alt="Imagem de um leão"></div>
+		<div class="caixas" id="dois"><img src="imagem3.jpeg" alt="Imagem de um leão"></div>
+		<div class="caixas" id="tres"><img src="imagem5.jpg" alt="Imagem de um leão"></div>
+	</div>
+	<p>As propriedades do flexbox são os seguintes: </p>
+	<ul>
+		<li>flex-direction</li>
+		<li>flex-wrap</li>
+		<li>flex-flow</li>
+		<li>justify-content</li>
+		<li>align-items</li>
+		<li>align-content</li>
+	</ul>
+
+<hr>
+<h2>Exemplo2</h2>
+	<h3>Flex-direction</h3>
+
+	<h4>Texto</h4>
+
+<p>A "direção flexível: coluna;" empilha os itens flexíveis verticalmente (de cima para baixo):</p>
+
+<div id="direction" class="container">
+ 
+ <div class="caixas" id="quatro">ITEM 4</div>
+<div class="caixas" id="cinco">ITEM 5</div>
+<div class="caixas" id="seis">ITEM 6</div>
+</div>
+	
+	
+	<hr>
+
+<h2>Exemplo3</h2>
+	<h3>flex-wrap</h3>
+
+	<h4>Número</h4>
+
+<p>A flex-wrap propriedade especifica se os itens flexíveis devem ser encapsulados ou não.</p>
+
+<div id="wrap" class="containerWrap">
+ 
+ <div class="caixasW">1</div>
+  <div class="caixasW">2</div>
+  <div class="caixasW">3</div>  
+  <div class="caixasW">4</div>
+  <div class="caixasW">5</div>
+  <div class="caixasW">6</div>  
+  <div class="caixasW">7</div>
+  <div class="caixasW">8</div>
+  <div class="caixasW">9</div>  
+  <div class="caixasW">10</div>
+  <div class="caixasW">11</div>
+  <div class="caixasW" >12</div>  
+</div>
+	
+	
+<hr>
+
+	
+<h2>Exemplo4</h2>
+	<h3>justify-content</h3>
+	<h4>Diversos</h4>
+	
+	
+<div class="justify-content">
+  <div>
+  	<p>Veja a Nossa Localização</p>
+  	<p>R. Tito, 54 - Vila Romana, São Paulo - SP, 05051-000</p>
+  </div>
+  <div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.124281985633!2d-46.693997384170224!3d-23.528031966249447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1657222075350!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+</div>
+	
+	
+	
+	
+</body>
+
+</html>
+
+

@@ -1,0 +1,37 @@
+body {
+    width: 700px;
+    margin-left: 35px;
+}
+
+h1 {
+    background-color: rgb(46, 247, 46);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: cursive;
+    color: rgb(59, 59, 59);
+}
+
+p {
+    font-family: cursive;
+}
+
+table {
+    background-color: #081e35;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+td,
+th {
+    font-family: cursive
+}
+
+img {
+    margin-right: 12px;
+}
+
+.esporte p {
+    margin-left: 25px;
+}

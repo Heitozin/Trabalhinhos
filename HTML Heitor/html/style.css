@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: var(--gray--100);
+
+    font-family: sans-serif;
+}
+
+
+:root {
+    --gray--100: #E6E8EB;
+}
+
+
+body {
+    display: grid;
+}
+
+h1 {
+    color: #98b9eb;
+
+    
+}
+
+h6 {
+    padding-bottom: .6rem;
+}
+
+hr {
+    padding-bottom: .6rem;
+}
+
+p {
+    padding-bottom: .3rem;
+}
+
+
+abbr {
+    
+}
+
+.title {
+    margin-bottom: .4rem;
+}
