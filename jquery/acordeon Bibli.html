@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.theme.css">
+    <style>
+        .ui-menu { width: 150px; }
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com jQuery</h1>
+    <ul id="menu">
+        <li class="ui-state-disabled"><div>Toys (n/a)</div></li>
+        <li><div>Books</div></li>
+        <li><div>Clothing</div></li>
+        <li><div>Electronics</div>
+          <ul>
+            <li class="ui-state-disabled"><div>Home Entertainment</div></li>
+            <li><div>Car Hifi</div></li>
+            <li><div>Utilities</div></li>
+          </ul>
+        </li>
+        <li><div>Movies</div></li>
+        <li><div>Music</div>
+          <ul>
+            <li><div>Rock</div>
+              <ul>
+                <li><div>Alternative</div></li>
+                <li><div>Classic</div></li>
+              </ul>
+            </li>
+            <li><div>Jazz</div>
+              <ul>
+                <li><div>Freejazz</div></li>
+                <li><div>Big Band</div></li>
+                <li><div>Modern</div></li>
+              </ul>
+            </li>
+            <li><div>Pop</div></li>
+          </ul>
+        </li>
+        <li class="ui-state-disabled"><div>Specials (n/a)</div></li>
+      </ul>
+       
+    <main>
+        <section id="painel">
+            <h2>Front-end</h2>
+            <section>
+                <h3>HTML5, CSS3, JavaScript e jQuery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum animi, optio repellendus facilis
+                    incidunt ducimus delectus nemo voluptatibus, vitae aliquid, labore a vel excepturi assumenda omnis?
+                    Sit nam expedita accusamus.</p>
+
+                <section>
+                    <h2>Back-end</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quaerat minima, pariatur
+                        nulla aliquid quibusdam ea corporis cum nostrum adipisci! Perspiciatis explicabo consequuntur
+                        blanditiis laudantium error doloremque voluptates necessitatibus incidunt!</p>
+                    <section>
+                        <h2>PHP e MySQL</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, similique corrupti quos ipsum
+                            aut quasi commodi recusandae tempore obcaecati, porro rem, natus magni. Assumenda velit
+                            inventore natus, est amet eos!</p>
+                        <section>
+                            <h2>Design</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, error voluptatem. Omnis
+                                delectus soluta nisi, perspiciatis ut, accusamus rerum error laboriosam exercitationem
+                                pariatur, iusto quae quos officiis minima in eum.</p>
+                            <section>
+                                <h2>Photoshop</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptates quam
+                                    quo, temporibus perferendis, quaerat suscipit doloribus consequuntur molestias vitae
+                                    laborum commodi exercitationem cupiditate nobis! Vero exercitationem alias quidem
+                                    velit.</p>
+                            </section>
+
+    </main>
+
+    <script src="jquery-ui-1.13.2.custom/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+
+    <script>
+        //Função para ativar o acordeon
+        $(document).ready(function(){
+            $('#painel').accordion({
+                active: false,
+                collapsible: true,
+                heighStyle: 'content'
+
+            })
+        })
+        $( function() {
+    $( "#menu" ).menu();
+  } );
+    </script>
+</body>
+
+</html>
