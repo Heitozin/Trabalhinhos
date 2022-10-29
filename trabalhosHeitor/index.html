@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Séries e filmes sim!</title>
+    <style>
+        img {
+            max-width: 100%;
+        }
+
+        .container {
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+
+        .topo {
+            background-color: rgb(255, 5, 47);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-bottom: solid 1px;
+            display: flex;
+            top: 0;
+            right: 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body {
+            padding-top: 80px;
+            background-color: cornsilk;
+        }
+
+        img {
+            width: 500px;
+            height: 350px;
+        }
+
+        h1 {
+            font-family: sans-serif;
+        }
+
+        h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        #netflix {
+            align-items: center;
+            text-align: center;
+        }
+
+        a {
+            color: black;
+        }
+
+        #breakingBad {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #suits {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #bojack {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+</head>
+<header class="topo">
+    <h1>As melhores séries da Netflix para maratonar!</h1>
+</header>
+
+<body>
+    <div class="container">
+
+        <div class="slideshow-container">
+
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="https://macmagazine.com.br/wp-content/uploads/2014/12/05-breaking-bad.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="https://tm.ibxk.com.br//ms/images/highlights/000/041/439/39487.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="https://i0.wp.com/cinematologia.com.br/cine/wp-content/uploads/2016/11/bojack-capa.jpg?fit=1920%2C1080&ssl=1"
+                    style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div id="netflix">
+            <h3>Que a Netflix tem como ponto forte as séries a gente não pode negar. E com tantas obras disponíveis na
+                plataforma
+                de streaming, fica difícil dizer quais são as melhores. Já que o que é bom para um, pode não ser a
+                melhor
+                escolha para o outro e gosto não se discute. A plataforma nos deixa cheios de opção nos mais variados
+                gêneros,
+                atingindo assim, grande parte do público.</h3>
+        </div>
+
+        <div id="breakingBad">
+            <h2><a href="breakingBad.html" target="_blank">1°-Breaking Bad</a></h2>
+            <p>A série que tem 5 temporadas disponíveis na Netflix mostra a vida do químico Walter White. Ele precisa
+                lidar com a frustração de dar aulas para adolescentes no ensino médio, ter um filho com paralisia
+                cerebral, uma esposa grávida, dívidas intermináveis e um diagnostico recente de câncer no pulmão.
+                Após sofrer um colapso, Walter abraça uma vida de crimes, começando a produzir e vender metanfetaminas
+                com um de seus ex-alunos. Tudo para garantir o futuro financeiro de sua família após a sua morte.
+                Breaking Bad é considerada uma das melhores séries da história e recebeu diversos prêmios, incluindo 16
+                Emmys e dois Globo de Ouro.</p>
+
+            <img src="https://img.olhardigital.com.br/wp-content/uploads/2022/08/breaking-bad.jpg" alt="">
+        </div>
+
+        <div id="suits">
+            <h2><a href="suits.html" target="_blank">2°-Suits</a></h2>
+            <p>Mike Ross (Patrick J. Adams) é um garoto que abandonou a faculdade de direito, mas brilhante como é,
+                consegue uma entrevista com o respeitado Harvey Specter (Gabriel Macht), um dos melhores advogados de
+                Manhattan. Mesmo sendo um gênio, Mike ainda tem muito a aprender sobre o Direito.</p>
+
+            <img src="https://thumbs.jusbr.com/imgs.jusbr.com/publications/images/1523592f00da33a5cfe80181ae573f6f"
+                alt="">
+        </div>
+
+        <div id="bojack">
+            <h2><a href="bojackHorseman.html" target="_blank">3°-Bojack Horseman</a></h2>
+            <p>BoJack é um decadente cavalo que trabalha na TV. Uma estrela já esquecida de um seriado da década de 1990
+                chamado Horsin' Around, ele disfarça sua baixa auto-estima com uísque e relações fracassadas. Com a
+                ajuda de Todd, seu parceiro humano, e a ex-amante Princesa Caroline, ele quer deixar novamente a sua
+                marca no mundo do entretenimento.</p>
+
+            <img src="https://seriemaniacos.tv/wp-content/uploads/2018/10/Bojack.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+</body>
+
+</html>
