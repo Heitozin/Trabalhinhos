@@ -8,6 +8,7 @@ formBimestre.addEventListener("submit", function (event) {
     let bimestreQuatro = Number(formBimestre.nota4.value);
     let media = (bimestreUm + bimestreDois + bimestreTres + bimestreQuatro) / 4;
 
+    
 
     if(formBimestre.nome.value == ""){
         alert("Preencha o campo Nome");

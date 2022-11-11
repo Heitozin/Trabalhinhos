@@ -1,6 +1,6 @@
 let form = document.getElementById("form-notas");
 let btn = document.getElementById("gerar");
-let relatorio = document.getElementById("relatorio")
+let relatorio = document.getElementById("relatorio");  
 //Vetor = Array
 let produtos = [];
 let quantidades = [];

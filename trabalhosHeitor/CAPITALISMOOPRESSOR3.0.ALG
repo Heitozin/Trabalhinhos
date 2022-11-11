@@ -47,7 +47,28 @@ fimpara
 caso 3
 para posicao de 0 ate 4 faca
 se buscaNome = nome[posicao] entao
-escreval("INFORMAÇÕES INDIVIDUAIS DOS COLABORADORES: ",  nome[posicao], " / ", cargo[posicao], " / ", salario[posicao], " / " admissao[posicao])
+escreval("INFORMAÇÕES INDIVIDUAIS DOS COLABORADORES: ", bruto[posicao])
+ se (salario[posicao] > 1 ) entao
+              bruto[posicao] <- salario[posicao] - (salario[posicao] * 0.06)
+fimse
+
+ se (salario[posicao] > 1 ) entao
+               bruto[posicao] <- salario[posicao] - (salario[posicao] * 0.12)
+               fimse
+
+se salario[posicao] <= 1212 entao
+      bruto[posicao] <- salario[posicao] - (salario[posicao] * 0.075)
+   senao
+      se (salario[posicao] > 1212) e (salario[posicao] <= 2427.35) entao
+         bruto[posicao] <- salario[posicao] - (salario[posicao] * 0.27)
+      senao
+         se (salario[posicao] > 2427.35) e (salario[posicao] <= 3641.03) entao
+            bruto[posicao] <- salario[posicao] - (salario[posicao] * 0.30)
+         senao
+               bruto[posicao] <- salario[posicao] - (salario[posicao] * 0.32)
+            fimse
+         fimse
+      fimse
 fimse
 fimpara
 
